@@ -1,0 +1,228 @@
+*{
+    margin: 0px;
+	padding: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+h1{  font-size:36px;
+    font-weight: 600;
+    text-align: center;
+    position: relative;
+    color:rgb(233, 241, 242);
+    margin-right:auto;
+    margin-left: auto;
+    float: top;
+
+}
+.header {
+    background-image: url('../Momo/images/backgroun.jpg');
+    background-size: cover;
+}
+
+.header-title {
+    text-align: center;
+    margin: auto;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.header-title h1 {
+    font-size: 36px;
+    font-weight: 600;
+    color:rgb(233, 241, 242);
+    text-align: center; /* add this line to center the heading */
+}
+This should make the "Gateau Jardin - Gallery" heading appear centered.
+
+
+
+
+nav {
+    display: flex;
+  }
+  nav img {
+    width: 130px;
+    margin-top: 2%;
+    margin-left: 2%;
+    text-align: left;
+    float: left;
+  }
+  .nav-links {
+    flex: 1;
+    text-align: right;
+    margin-right: 2%;
+    float: right;
+  }
+  .nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+  }
+  .nav-links ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 13px;
+  }
+  .nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44366;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+  }
+  .nav-links ul li:hover::after {
+    width: 100%;
+  }
+  .fa-bars {
+    right: 0px;
+  }
+  .fa-times{
+    left:0px;
+  }
+  nav .fa {
+    display: none;
+  }
+  /*to make adjustments for use on screens smaller than 700px e.g. phones*/
+  @media (max-width: 700px) {
+    .text.box h1 {
+      font-size: 20px;
+      /*makes the font smaller on screen*/
+    }
+    .nav-links ul li {
+      display: block;
+    }
+    .nav-links {
+      /* makes an opaque drop-down menu but only on phones using the nav-links which was already set up for the menu previously*/
+      position: absolute;
+      background: rgb(97, 245, 166);
+      ;
+      height: 100%;
+      width: 150px;
+      top: 0;
+      right: 0px;
+      text-align: left;
+      z-index: 2;
+      transition: 1s;
+      display: none;
+      text-align: right;
+      margin-right: 0;
+    }
+    .nav-links ul {
+      padding: 30px;
+    }
+    nav .fa {
+      display: block;
+      color: #fff;
+      margin-right: 20px;
+      font-size: 22px;
+      cursor: pointer;
+      float: right;
+    }
+  }
+  
+/*--------gallery section------------*/
+
+/*-------can write all media (phone adaption) in one place but am writing in this order of us writing the code after writing the corresponding computer part. ------*/
+@media(max-width:700px){
+    .gallery{
+        flex-direction: column
+    }
+   
+}
+
+/*------gallery pics---*/
+
+
+   
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .gallery-item {
+        margin: 10px;
+        border: 2px solid #ddd;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        overflow: hidden;
+      }
+      
+      .gallery-item img {
+        display: block;
+        width: 100%;
+        height: auto;
+        transition: transform 0.3s ease;
+      }
+      
+      .gallery-item:hover img {
+        transform: scale(1.1);
+      }
+      .gallery img {
+        width: 200px;
+        height: 200px;
+        margin: 15px;
+        border: 3px solid rosybrown; /* added border property */
+    }
+
+/*to make adjustments for use on screens smaller than 700px e.g. phones*/
+@media (max-width: 700px){
+    .gallery img {
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+}}
+      /*-----------------footer--------------------------------------------*/
+.footer {
+    background-color: rgb(105, 225, 81);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+  }
+  
+  .footer-text {
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+  }
+  
+  .footer-links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .footer-links a {
+    color: rgb(253, 255, 253);
+    font-size: 14px;
+    margin-left: 10px;
+    text-decoration: none;
+  }
+
+  .footer-links a:hover {
+    color: rgb(247, 72, 72); /* change color on hover */
+  }
+  
+  
+  p4 {
+    margin: 0;
+    padding: 0;
+    color: white;
+  }
+      body {
+        background-image: url('images/backgroun.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+  /*to make adjustments for use on screens smaller than 700px e.g. phones*/
+  @media (max-width: 700px){
+    .footer-text {
+        color: rgb(255, 255, 255);
+        font-size: 10px;}
+
+        .footer-links a {
+            color: rgb(253, 255, 253);
+            font-size: 10px;
+}}

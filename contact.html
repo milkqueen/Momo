@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content ="with=device-width, initial-scale=1.0">
+	<title>Gallery</title>
+	<head>
+		<link rel="stylesheet" href="style4.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;1,300;1,400;1,600&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	</meta>
+	<style type="text/css">
+		.gallery {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+			margin: 20px auto;
+			max-width: 800px;
+		}
+
+		.gallery img {
+			width: 200px;
+			height: 200px;
+			margin: 15px; 
+		}
+	</style>
+</head>
+<body>
+
+	<section class="header">
+		<nav>
+		   <a href="webpage.html"><img src="../Momo/images/logo.png"></a>
+		   <div class="header-title">
+		   </div>
+		   <div class="nav-links" id="navLinks">
+			   <i class="fa fa-times" onclick="hideMenu()"></i>
+			   <ul>
+				<li><a href="webpage.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="gallery.html">Gallery</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			   </ul>
+			   
+		   </div>
+		   <i class="fa fa-bars" onclick="showMenu()"></i>
+		   <nav style = "clear: both">
+			
+		</nav>
+	
+ <!------------------------contact us section------------------------------------->
+ <section class="contact">
+	<div class="get-in-touch">
+	  <h1>Get In Touch Today!</h1>
+	</div>
+	<div class="form">
+	  <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSecAX_zQS-CNGqEqSYh4fkxMFXBnc1NhROpmqsK388SMir8HQ/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
+		<label for="name">Name:</label>
+		<input type="text" name="entry.1116004975" id="entry.1116004975"placeholder="Enter your name" required>
+		<label for="email">Email:</label>
+		<input type="email" name="entry.1228727332" id="entry.1228727332" placeholder="Enter your email" required>
+		<label for="name">Phone:</label>
+		<input type="text"  name="entry.627002573" id="entry.627002573" placeholder="Enter your phone number" required>
+		<label for="message">Message:</label>
+		<textarea rows="5" cols="60" name="entry.1779483928" id="entry.1779483928" placeholder="Enter your message" required></textarea>
+		<button type="submit">Send</button>
+	  </form>
+	</div>
+  </section>
+	
+  <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+  
+</body>
+<!-------------------------footer------------------------>
+<footer class="footer">
+	<p4 class="footer-text">© 2022 Gateau Jardin. All Rights Reserved.</p4>
+	<nav class="footer-links">
+	  <a href="https://www.instagram.com/gateau_jardin/">Instagram</a>
+	  <a href="http://wwww.gateaujardin.com/contact/">Contact Us</a>
+	</nav>
+  </footer>
+
+  <!--------Javascript for Toggle Menu -------> 
+<script>
+    var navLinks = document.getElementById("navLinks");
+    
+    function showMenu(){
+        navLinks.style.display = "block";
+    }
+     function hideMenu(){
+        navLinks.style.display = "none";
+     }
+</script>
+<!-----------------------------------javascript for form---------------------------------------->  
+<script src="assets/js/jquery.min.js"></script>
+<script type="text/javascript">var submitted=false;</script>
+<script type="text/javascript">
+$('#gform').on('submit', function(e) {
+  $('#gform *').fadeOut(2000);
+  $('#gform').prepend('Your submission has been processed...');
+  });
+</script>   
+   
+   
+   
+</html>

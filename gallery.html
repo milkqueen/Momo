@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content ="with=device-width, initial-scale=1.0">
+	<title>Gallery</title>
+	<head>
+		<link rel="stylesheet" href="style2.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;1,300;1,400;1,600&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	</meta>
+	<style type="text/css">
+		.gallery {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+			margin: 20px auto;
+			max-width: 800px;
+		}
+
+		.gallery img {
+			width: 200px;
+			height: 200px;
+			margin: 15px; 
+		}
+	</style>
+</head>
+<body>
+
+	<section class="header">
+		<nav>
+		   <a href="webpage.html"><img src="../Momo/images/logo.png"></a>
+		   <div class="header-title">
+		   </div>
+		   <div class="nav-links" id="navLinks">
+			   <i class="fa fa-times" onclick="hideMenu()"></i>
+			   <ul>
+				<li><a href="webpage.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="gallery.html">Gallery</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			   </ul>
+			   
+		   </div>
+		   <i class="fa fa-bars" onclick="showMenu()"></i>
+		   <nav style = "clear: both">
+			<h1>Gateau Jardin - Gallery</h1>
+		</nav>
+	
+	<div class="gallery">
+		<img src="images/baby.png">
+		<img src="images/gateua.png">
+		<img src="images/fruit.png">
+		<img src="images/wedding.jpg">
+		<img src="images/darling girl.png">
+		<img src="images/happy anniversary.png">
+		<img src="images/happy birthday.png">
+		<img src="images/football cake.jfif">
+		<img src="images/toffee cake.png">
+		<img src="images/roses.png">
+		<img src="images/smarties.jpg">
+		<img src="images/cupcakes.jpg">
+	</div>
+</body>
+<footer class="footer">
+	<p4 class="footer-text">© 2022 Gateau Jardin. All Rights Reserved.</p4>
+	<nav class="footer-links">
+	  <a href="https://www.instagram.com/gateau_jardin/">Instagram</a>
+	  <a href="http://wwww.gateaujardin.com/contact/">Contact Us</a>
+	</nav>
+  </footer>
+
+  <!--------Javascript for Toggle Menu -------> 
+<script>
+    var navLinks = document.getElementById("navLinks");
+    
+    function showMenu(){
+        navLinks.style.display = "block";
+    }
+     function hideMenu(){
+        navLinks.style.display = "none";
+     }
+</script>   
+   
+</html>

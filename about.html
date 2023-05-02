@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content ="with=device-width, initial-scale=1.0">
+	<title>About Us</title>
+	<head>
+		<link rel="stylesheet" href="style3.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;1,300;1,400;1,600&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+	</meta>
+	
+</head>
+<body>
+
+	<section class="header">
+		<nav>
+		   <a href="webpage.html"><img src="../Momo/images/logo.png"></a>
+		   <div class="header-title">
+		   </div>
+		   <div class="nav-links" id="navLinks">
+			   <i class="fa fa-times" onclick="hideMenu()"></i>
+			   <ul>
+				<li><a href="webpage.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="gallery.html">Gallery</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			   </ul>
+			   
+		   </div>
+		   <i class="fa fa-bars" onclick="showMenu()"></i>
+		   <nav style = "clear: both">
+			<h1>Gateau Jardin - Our Tale</h1>
+		</nav>
+		</nav>
+	</section>
+	<section class="gallery">
+		<p>Our story began in Summer 2021, when deep-rooted desire for fresh-cream cakes took a hold of our hearts. With only quite costly cakes available in the local area, we decided to set off on our own learning curve to coalesce the perfect curation of delightful treats to inspire our tastebuds. After tickling the fancy of all those around us, these tried and tested recipes formed the foundation of our business today, filled with love and solely deidcated to bringing joy to us and our customers at an affordable rate. To date we have catered for all sorts of occasions, from weddings to hen-do's, birthdays and graduations, births to book clubs, our cakes never seem to dissapoint. Even family night-ins are catered for, treasured and made all the more precious with our special treats. From cupcakes, to cakes, multiple tiers to cake-pops, our edible creaions never fail to captivate our clients. <br><br> Please feel free to get in touch in touch using our contact page for free quotes, reviews, enquiries or comments, and let us help you make your joyful and bespoke dreams come true!</p>
+	</section>
+</section>
+	
+</body>
+<footer class="footer">
+	<p4 class="footer-text">© 2022 Gateau Jardin. All Rights Reserved.</p4>
+	<nav class="footer-links">
+	  <a href="https://www.instagram.com/gateau_jardin/">Instagram</a>
+	  <a href="http://wwww.gateaujardin.com/contact/">Contact Us</a>
+	</nav>
+  </footer>
+
+    <!--------Javascript for Toggle Menu -------> 
+<script>
+    var navLinks = document.getElementById("navLinks");
+    
+    function showMenu(){
+        navLinks.style.display = "block";
+    }
+     function hideMenu(){
+        navLinks.style.display = "none";
+     }
+</script>   
+
+</html>
