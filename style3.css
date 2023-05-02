@@ -19,7 +19,7 @@ html, body {
 } 
 
 .header {
-    background-image: url('../Momo/images/backgroun.jpg');
+    background-image: url('images/backgroun.jpg');
     background-size: cover;
 }
 
