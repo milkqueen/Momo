@@ -178,7 +178,10 @@ nav {
         color: rgb(247, 72, 72); /* change color on hover */
       }
       
-      
+      body {
+        background-image: url('images/backgroun.jpg');
+        background-repeat: no-repeat;
+	      background-size: cover;}
       p4 {
         margin: 0;
         padding: 0;
