@@ -184,11 +184,7 @@ nav {
         padding: 0;
         color: white;
       }
-          body {
-            background-image: url('images/backgroun.jpg');
-            background-repeat: no-repeat;
-            background-size: cover;
-          }
+          
       /*to make adjustments for use on screens smaller than 700px e.g. phones*/
       @media (max-width: 700px){
         .footer-text {
