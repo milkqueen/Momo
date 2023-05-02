@@ -21,6 +21,7 @@ html, body {
 .header {
     background-image: url('images/backgroun.jpg');
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .header-title {
