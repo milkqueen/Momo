@@ -3,54 +3,77 @@
 	padding: 0px;
     font-family: 'Poppins', sans-serif;
 }
-.header{
-    min-height:100vh;
-    width:100%;
-    background-image:url(images/backgrou.jpg);
-    background-position:center;
-    background-size:cover;
-    position:relative;
+.header {
+    background-image: url('images/backgroun.jpg');
+    background-size: cover;
 }
-nav{
+
+.header-title {
+    text-align: center;
+    margin: auto;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.header-title h1 {
+    font-size: 36px;
+    font-weight: 600;
+    color:rgb(233, 241, 242);
+    text-align: center; /* add this line to center the heading */
+}
+This should make the "Gateau Jardin - Gallery" heading appear centered.
+
+
+
+
+nav {
     display: flex;
-    padding: 1% 1%;
-    justify-content: space-between;
-    align-items: center;
-}
-nav img{
-    width: 150px;
-}
-.nav-links{
+  }
+  nav img {
+    width: 130px;
+    margin-top: 2%;
+    margin-left: 2%;
+    text-align: left;
+    float: left;
+  }
+  .nav-links {
     flex: 1;
     text-align: right;
-}
-.nav-links ul li{
+    margin-right: 2%;
+    float: right;
+  }
+  .nav-links ul li {
     list-style: none;
     display: inline-block;
     padding: 8px 12px;
     position: relative;
-}
-
-.nav-links ul li a{
+  }
+  .nav-links ul li a {
     color: rgb(255, 255, 255);
     text-decoration: none;
     font-size: 13px;
-    
-}
-.nav-links ul li::after{
-    content:'';
+  }
+  .nav-links ul li::after {
+    content: '';
     width: 0%;
     height: 2px;
-    background: red;;
+    background: #f44366;
     display: block;
     margin: auto;
-    transition:0.5s
-        
-}
-.nav-links ul li:hover::after{
+    transition: 0.5s;
+  }
+  .nav-links ul li:hover::after {
     width: 100%;
-    
-}
+  }
+  .fa-bars {
+    right: 0px;
+  }
+  .fa-times{
+    left:0px;
+  }
+  nav .fa {
+    display: none;
+  }
 
 .text-box {
     width: 70%;
