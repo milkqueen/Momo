@@ -13,7 +13,7 @@
 }
 nav{
     display: flex;
-    padding: 1% 0%;
+    padding: 1% 1%;
     justify-content: space-between;
     align-items: center;
 }
