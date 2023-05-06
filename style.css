@@ -89,7 +89,9 @@ nav img{
     align-items: center;
     cursor: pointer;
     margin: auto;
-	text-align: center;
+    text-align: center;
+    display: flex; /* Center horizontally */
+    justify-content: center; /* Center vertically */
 
   
 }
